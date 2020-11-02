@@ -5,7 +5,7 @@ import Menu from "./Components/Menu";
 import {Route} from "react-router-dom";
 import Bloglist from "./Components/Bloglist";
 import Home from './Components/Home';
-import "./app.css";
+import "./App.css";
 
 
 
