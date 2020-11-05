@@ -50,7 +50,7 @@ class BlogList extends Component {
                     <Card.Body>
                     <Card.Title className="text-center" >{blog.title}</Card.Title>
                     <Card.Text className="text-center" >{blog.body}</Card.Text>
-                    <Link to={'/blog/' + id} className="btn btn-warning align-item-center justify-content-center">Read More</Link> 
+                    <Link to={{pathname: '/blog/' + id, state: blog, blogPic: this.state.blogPictures[id]}} className="btn btn-warning align-item-center justify-content-center">Read More</Link> 
                     </Card.Body>
                     </Card>
                 </div>               
