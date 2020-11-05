@@ -42,7 +42,7 @@ class BlogList extends Component {
     
     render() {
         console.log(this.state);
-        const blogList = this.state.blogs.map((blog, id)=>{
+        const blogList = this.state.blogs.slice(0, 20).map((blog, id)=>{
             return(
                 <div className="col-md-4 p-5" key={id}>
                     <Card style={{ width: '18rem' }}>
@@ -50,7 +50,7 @@ class BlogList extends Component {
                     <Card.Body>
                     <Card.Title className="text-center" >{blog.title}</Card.Title>
                     <Card.Text className="text-center" >{blog.body}</Card.Text>
-                    <Link to={'/blog/' + blog.id} className="btn btn-warning align-item-center justify-contentt-center">Read More</Link> 
+                    <Link to={'/blog/' + id} className="btn btn-warning align-item-center justify-content-center">Read More</Link> 
                     </Card.Body>
                     </Card>
                 </div>               

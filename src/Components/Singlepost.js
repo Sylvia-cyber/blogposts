@@ -1,19 +1,11 @@
 import React, { Component } from 'react'
-
-class Singlepost extends Component {
-    state= {
-        blog: {
-
-        },
-    }
+import axios from "axios";
+import { Card} from "react-bootstrap"
 
 
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+function Singlepost(props) {
+    
+    
+  
 }
 export default Singlepost;
